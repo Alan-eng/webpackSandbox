@@ -1,10 +1,3 @@
-import _ from 'lodash'
+import testHtml from './additionalHTML.html'
 
-const component () => {
-    let element = document.createElement('div');
-
-    element.innerHTML=_.join(['hello new!!! -->', 'div element'], ' ');
-    return element;
-}
-
-document.body.appendChild(component());
+document.getElementById('test').innerHTML = testHtml;
